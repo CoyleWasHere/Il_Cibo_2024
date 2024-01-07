@@ -7,18 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56E91954C81340BC17BB154F /* Pods_Il_Cibo_2024.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBF8E0F875F1D331654EAAE6 /* Pods_Il_Cibo_2024.framework */; };
 		FC66A3C52B4A19F00026181C /* Il_Cibo_2024App.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC66A3C42B4A19F00026181C /* Il_Cibo_2024App.swift */; };
 		FC66A3C72B4A19F00026181C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC66A3C62B4A19F00026181C /* ContentView.swift */; };
 		FC66A3C92B4A19F50026181C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC66A3C82B4A19F50026181C /* Assets.xcassets */; };
 		FC66A3CC2B4A19F50026181C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC66A3CB2B4A19F50026181C /* Preview Assets.xcassets */; };
+		FCD7CE6D2B4B38C6004840FC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FCD7CE6C2B4B38C6004840FC /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A6DDBF8B40D80307BCF950D /* Pods-Il_Cibo_2024.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Il_Cibo_2024.release.xcconfig"; path = "Target Support Files/Pods-Il_Cibo_2024/Pods-Il_Cibo_2024.release.xcconfig"; sourceTree = "<group>"; };
+		C148C54513DB51368516D402 /* Pods-Il_Cibo_2024.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Il_Cibo_2024.debug.xcconfig"; path = "Target Support Files/Pods-Il_Cibo_2024/Pods-Il_Cibo_2024.debug.xcconfig"; sourceTree = "<group>"; };
+		DBF8E0F875F1D331654EAAE6 /* Pods_Il_Cibo_2024.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Il_Cibo_2024.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC66A3C12B4A19F00026181C /* Il_Cibo_2024.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Il_Cibo_2024.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC66A3C42B4A19F00026181C /* Il_Cibo_2024App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Il_Cibo_2024App.swift; sourceTree = "<group>"; };
 		FC66A3C62B4A19F00026181C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FC66A3C82B4A19F50026181C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC66A3CB2B4A19F50026181C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FCD7CE6C2B4B38C6004840FC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +32,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56E91954C81340BC17BB154F /* Pods_Il_Cibo_2024.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F13DF62FDB6A0B85CE37428 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C148C54513DB51368516D402 /* Pods-Il_Cibo_2024.debug.xcconfig */,
+				4A6DDBF8B40D80307BCF950D /* Pods-Il_Cibo_2024.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E1D057265B9F2186D32A6953 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DBF8E0F875F1D331654EAAE6 /* Pods_Il_Cibo_2024.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FC66A3B82B4A19F00026181C = {
 			isa = PBXGroup;
 			children = (
 				FC66A3C32B4A19F00026181C /* Il_Cibo_2024 */,
 				FC66A3C22B4A19F00026181C /* Products */,
+				5F13DF62FDB6A0B85CE37428 /* Pods */,
+				E1D057265B9F2186D32A6953 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +80,7 @@
 				FC66A3C42B4A19F00026181C /* Il_Cibo_2024App.swift */,
 				FC66A3C62B4A19F00026181C /* ContentView.swift */,
 				FC66A3C82B4A19F50026181C /* Assets.xcassets */,
+				FCD7CE6C2B4B38C6004840FC /* GoogleService-Info.plist */,
 				FC66A3CA2B4A19F50026181C /* Preview Content */,
 			);
 			path = Il_Cibo_2024;
@@ -74,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FC66A3CF2B4A19F50026181C /* Build configuration list for PBXNativeTarget "Il_Cibo_2024" */;
 			buildPhases = (
+				FD98720F824FCD89064AB664 /* [CP] Check Pods Manifest.lock */,
 				FC66A3BD2B4A19F00026181C /* Sources */,
 				FC66A3BE2B4A19F00026181C /* Frameworks */,
 				FC66A3BF2B4A19F00026181C /* Resources */,
+				19AD19F291F2B1CA7B018DFA /* [CP] Embed Pods Frameworks */,
+				B7DBA0E666BCEFAC22C6C085 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -127,10 +157,70 @@
 			files = (
 				FC66A3CC2B4A19F50026181C /* Preview Assets.xcassets in Resources */,
 				FC66A3C92B4A19F50026181C /* Assets.xcassets in Resources */,
+				FCD7CE6D2B4B38C6004840FC /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19AD19F291F2B1CA7B018DFA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Il_Cibo_2024/Pods-Il_Cibo_2024-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Il_Cibo_2024/Pods-Il_Cibo_2024-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Il_Cibo_2024/Pods-Il_Cibo_2024-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7DBA0E666BCEFAC22C6C085 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Il_Cibo_2024/Pods-Il_Cibo_2024-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Il_Cibo_2024/Pods-Il_Cibo_2024-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Il_Cibo_2024/Pods-Il_Cibo_2024-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD98720F824FCD89064AB664 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Il_Cibo_2024-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FC66A3BD2B4A19F00026181C /* Sources */ = {
@@ -182,7 +272,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -245,7 +335,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -266,6 +356,7 @@
 		};
 		FC66A3D02B4A19F50026181C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C148C54513DB51368516D402 /* Pods-Il_Cibo_2024.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -295,6 +386,7 @@
 		};
 		FC66A3D12B4A19F50026181C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A6DDBF8B40D80307BCF950D /* Pods-Il_Cibo_2024.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
